@@ -31,4 +31,23 @@ In general, AI solution or agentic AI involves any or all of these 5 hallmarks:
 
 _A key concern to building any production agentic systems with LLM is about accuracy, predictability, robustness of the response and having validation agents to increase accuracy and build more guarantees._
 
-## Understand agents
+## Workflow agentic pattern:
+The process is more:
+1. *Open-ended*
+2. *Feedback-loops*
+3.. *No fixed path*
+
+## Challenges in agentic system
+1. No knowing how long it will take to complete the task.
+2. Not knowing if it will complete the task.
+3. Not knowing the quality of outputs.
+3. Not knowing the cost.
+
+## Risk of Agent frameworks
+1. *Unpredictable path*: not knowing what order task will take place or what task will happen.
+2. *Unpredictable output*: able to tackle complex problems, but unpredictable outputs.
+3. *Unpredictable cost*: cost of running the API.
+4. *Monitoring*: ways to monitor LLM / agent interactions.
+5. *Guardrails*: ensures agents behave safely, consistently and within intended boundaries.
+
+[Leaderboard](https://www.vellum.ai/llm-leaderboard)
