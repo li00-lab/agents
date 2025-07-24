@@ -50,4 +50,29 @@ The process is more:
 4. *Monitoring*: ways to monitor LLM / agent interactions.
 5. *Guardrails*: ensures agents behave safely, consistently and within intended boundaries.
 
+## Agentic AI framework
+Frameworks provide a glue / abstraction code that takes away some of the details of interacting with LLMs and provide a nice and elegant framework for building agentic solutions and focusing on the business problem instead.
+1. *No framework*: simply connect to LLMs using APIs and use that to orchestrate amongst LLMs. (Anthropic - building effective Agents, advocate using no frameworks and connecting to APIs directly because thes APIs are simple and straightforward. Users can see what is going on under the hood and control the prompts in detail.).
+2. *Model Context Protocol*: an open source protocol that connect things together by allowing models to be connected to sources of data and tools, remove the need of glue code. Provides the ability to stitch models and providers in this simple way.
+3. *OpenAI Agent SDK*: a new light-weight, simple and clean framework.
+4. *Crew AI*: a light-weight and low code configuration that put agents to work on a problem only through configuration YAML file.
+5. *LanGraph*: a heavy-weight to build computational graph for agents and tools.
+6. *AutoGen*.
+
+## Resources
+We can provide resources (context, information) to LLM to improve its expertise. This also means shoving data relevant to the question into the prompt. *RAG* is a technique that is smart at picking relevant inform for the question.
+
+## Tools
+Tools give LLM the autonomy. It gives an LLM the power to carry out actions like *query a database* or *message other LLM*.
+```
+LLM ---response---> code ---execute---> task
+```
+In the prompts to LLM, we list out all the things the LLM can ask for, and make it respond in JSON which contains what the LLM wants to do.
+
+1. *System prompt*: tends to be the overall instructions that sets the context for the task at hand, the format and the way it should respond.
+2. *User prompt*: is the actual prompt that is coming from the user.
+
+## Structured output
+1. Use pydantic model
+
 [Leaderboard](https://www.vellum.ai/llm-leaderboard)
